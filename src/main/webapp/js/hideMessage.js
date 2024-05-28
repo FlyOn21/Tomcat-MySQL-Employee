@@ -12,13 +12,10 @@ window.onload = function() {
             }, 1000); // Wait an additional 1 second to match the transition duration
         }
         if (errorMsg) {
-            // Start the fade-out transition
             errorMsg.style.opacity = '0';
-
-            // Wait for the transition to finish before setting display to 'none'
             setTimeout(function() {
                 errorMsg.style.display = 'none';
-            }, 1000); // Wait an additional 1 second to match the transition duration
+            }, 1000);
         }
     }, 5000); // Starts hiding after 5 seconds
 };
