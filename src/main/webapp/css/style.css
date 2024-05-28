@@ -1,0 +1,240 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 40px;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header styles */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 500px; /* Restrict the form's max width for better aesthetics */
+    margin: 2% auto; /* Center the container with some margin from the top */
+    padding: 20px;
+    background: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.container-error {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+
+/* Form styling */
+.form-style {
+    display: flex;
+    flex-direction: column; /* Stack the form fields vertically */
+}
+
+/* Label Styling */
+label {
+    font-size: 14px; /* Adequate font size for readability */
+    color: #666; /* Medium grey color */
+    margin-bottom: 5px; /* Space below each label */
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="email"],
+input[type="checkbox"] {
+    padding: 8px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Subtle border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    margin-bottom: 15px; /* Spacing below each input */
+    width: 100%; /* Ensure inputs take full width of the form */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+input[type="checkbox"] {
+    width: auto; /* Override width for checkboxes */
+    margin-bottom: 0; /* Reduce space for aligned label */
+}
+
+select {
+    padding: 8px; /* Padding for select fields */
+    border: 1px solid #ccc; /* Subtle border for select */
+    border-radius: 4px; /* Rounded corners for select */
+    margin-bottom: 15px; /* Spacing below each select */
+    width: 100%; /* Ensure select takes full width of the form */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+
+/* Button styling */
+.button, .create-button, .edit-button, .delete-button{
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #5c67f2;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.button-submit {
+    margin: 0 0 10px 0;
+}
+.button-submit:hover {
+    margin: 0 0 10px 0;
+    background-color: #2f38da;
+}
+
+.create-button {
+    background-color: #4CAF50; /* Green */
+    margin: 0 0 10px 0;
+}
+
+.create-button:hover {
+    background-color: #054f08;
+}
+
+.edit-button {
+    background-color: #5c67f2; /* Blue */
+}
+
+.edit-button:hover {
+    background-color: #2933d9;
+}
+
+.delete-button {
+    background-color: #dc8e88; /* Red */
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.button-return {
+    background-color: #f4f4f9;
+    color: #333;
+    border: 1px solid #ccc;
+    opacity: 0.75;
+    margin-top: 20px;
+}
+.button-return:hover {
+    background-color: #e0e0e0;
+    opacity: 1;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #5c67f2;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+/* Table styles */
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-row, .data-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-cell, .data-cell, .data-not-found {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.header-cell {
+    background-color: #f4f4f9;
+    font-weight: bold;
+}
+
+.data-cell {
+    background-color: #fff;
+    text-align: center;
+}
+
+.data-not-found {
+    font-style: italic;
+    background-color: #fff;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+form {
+    display: inline; /* Align form with link button */
+}
+
+/* Msg */
+
+.success-msg {
+    color: green;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #cfc;
+    background-color: #eff;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    transform: translateX(-67%);
+    width: auto;
+    max-width: 90%; /* Maximum width to prevent overly wide messages */
+    text-align: center;
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: visual enhancement */
+    opacity: 1;               /* Start fully visible */
+    transition: opacity 1s ease-in-out; /* Transition for opacity changes */
+}
+
+.error-msg {
+    color: #ec0e0e;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #e85c5c;
+    background-color: #efe8ea;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    transform: translateX(-67%);
+    width: auto;
+    max-width: 90%; /* Maximum width to prevent overly wide messages */
+    text-align: center;
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: visual enhancement */
+    opacity: 1;               /* Start fully visible */
+    transition: opacity 1s ease-in-out;
+}
+
+.error-msg-validate {
+    color: #ec0e0e;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #e85c5c;
+    background-color: #efe8ea;
+}
+
+
