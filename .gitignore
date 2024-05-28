@@ -47,6 +47,10 @@ build/
 .idea
 .idea/*
 
+### Java ###
+out/
+out/*
+
 #### Catalina ###
 #Catalina
 #Catalina/*
