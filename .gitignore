@@ -54,3 +54,6 @@ out/*
 #### Catalina ###
 #Catalina
 #Catalina/*
+
+### Property files ###
+*.properties
